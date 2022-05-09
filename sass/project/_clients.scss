@@ -1,0 +1,35 @@
+.company-list {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.company-list__link {
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}

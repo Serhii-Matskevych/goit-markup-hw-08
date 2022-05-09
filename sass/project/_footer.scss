@@ -1,0 +1,108 @@
+.footer-page {
+  background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .container {
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+  }
+}
+.footer-nav__item {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+.footer-soc__link {
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus {
+    background-color: var(--accent-color);
+  }
+
+  
+}
+
+.logo-footer {
+  color: var(--footer-logo-color);
+}
+.footer-adress {
+  flex-grow: 1;
+}
+.geolocation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--footer-logo-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer__logo {
+  color: var(--footer-logo-color);
+}
+.footer-nav__list {
+  margin-top: 20px;
+}
+
+.footer-link {
+  margin-left: 70px;
+}
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-soc__list {
+  display: flex;
+  justify-content: center;
+}
+.footer-soc__item + .footer-soc__item {
+  margin-left: 10px;
+}
+
+.footer-soc__icon {
+  fill: #ffffff;
+}
+
+.footer-mail {
+  margin-left: 93px;
+}
+.footer__form {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+  color: var(--primery-bg-color);
+}
+.footer__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--footer-logo-color);
+  border: transparent;
+  border-radius: 4px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.footer-icon {
+  margin-left: 10px;
+}

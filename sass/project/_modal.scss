@@ -1,0 +1,210 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms, visibility 250ms;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--footer-logo-color);
+  border-radius: 4px;
+  padding: 40px;
+  &-text {
+    color: var(--primary-text-color);
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+.button__modal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.svg__close {
+  fill: var(--header-logo-color);
+  width: 11px;
+  height: 11px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .button__modal:hover & {
+    fill: var(--accent-color);
+  }
+
+  .button__modal:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.form {
+  position: relative;
+  margin-bottom: 10px;
+  &:nth-child(4) {
+    margin-bottom: 20px;
+  }
+
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:nth-child(5) {
+    margin-bottom: 0px;
+  }
+  &__name {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    display: block;
+    color: rgba(117, 117, 117, 1);
+  }
+}
+.form__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .form__input:focus + & {
+    fill: var(--accent-color);
+  }
+
+  .form__input:hover + & {
+    fill: var(--accent-color);
+  }
+}
+.form__input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  padding-left: 38px;
+  margin-top: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: var(--accent-color);
+    outline: transparent;
+  }
+
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.modal-coments {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  resize: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:hover {
+    border-color: var(--accent-color);
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
+    outline: transparent;
+  }
+}
+
+.form-check:checked + .agreement::before {
+  background-color: var(--accent-color);
+  background-image: url(../img-home-work2/check.svg);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+}
+.agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--title-text-color);
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--header-logo-color);
+    border-radius: 2px;
+    margin-right: 8px;
+  }
+}
+
+.text-modal {
+  margin-left: 5px;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+.form__button {
+  width: 200px;
+  height: 50px;
+  border-color: transparent;
+  border-radius: 4px;
+  color: var(--footer-logo-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
