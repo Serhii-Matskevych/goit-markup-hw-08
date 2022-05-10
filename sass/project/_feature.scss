@@ -1,7 +1,13 @@
 .feature {
-  display: flex;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  // display: flex;
   &__item {
-    margin-right: 30px;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    // margin-right: 30px;
   }
   &__item::before {
     background-color: var(--primery-bg-color);
@@ -12,6 +18,9 @@
     margin-right: 0px;
   }
   &__box {
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +29,7 @@
     margin-bottom: 30px;
     background-color: var(--primery-bg-color);
     border-radius: 4px;
-    margin-right: 10px;
+    // margin-right: 10px;
     fill: var(--title-text-color);
   }
   &__title {
@@ -35,6 +44,9 @@
     margin-bottom: 10px;
   }
   &__text {
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+    }
     color: var(--title-text-color);
     font-family: Roboto;
     font-size: 14px;

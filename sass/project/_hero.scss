@@ -1,4 +1,7 @@
 .hero {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
