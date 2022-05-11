@@ -2,11 +2,8 @@
   background-color: var(--primery-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-bottom: auto;
   @media screen and (min-width: 480px) {
     width: 480px;
-    margin-bottom: 30px;
   }
 }
 .section__title {
@@ -15,42 +12,48 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .command {
   // display: flex;
+  @media screen and (min-width: 480px) {
+    .section__title {
+      width: 480px;
+    }
+    &__item {
+      background-color: var(--footer-logo-color);
+      margin-right: 30px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      @media screen and (min-width: 480px) {
+        width: 450px;
+        margin-bottom: 30px;
+      }
+    }
 
-  &__item {
-    background-color: var(--footer-logo-color);
-    margin-right: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      margin-bottom: 30px;
+    &__item:last-child {
+      margin-right: 0;
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.18;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    &__text {
+      color: var(--title-text-color);
+      font-size: 16px;
+      line-height: 1.18;
+      letter-spacing: 0.03em;
+      text-align: center;
     }
   }
 }
-
-&__item:last-child {
-  margin-right: 0;
-}
-&__title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  margin-bottom: 10px;
-  text-align: center;
-}
-&__text {
-  color: var(--title-text-color);
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
 .command__box {
   padding-top: 30px;
   padding-bottom: 30px;
