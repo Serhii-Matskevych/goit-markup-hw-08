@@ -2,8 +2,11 @@
   background-color: var(--primery-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: auto;
+  margin-bottom: auto;
   @media screen and (min-width: 480px) {
     width: 480px;
+    margin-bottom: 30px;
   }
 }
 .section__title {
