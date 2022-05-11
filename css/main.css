@@ -193,6 +193,13 @@ img {
   height: auto;
 }
 
+@media screen and (min-width: 480px) {
+  img {
+    width: 480px;
+    margin: auto;
+  }
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -266,6 +273,13 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 480px;
+    font-size: 26px;
+  }
+}
+
 .hero__button {
   cursor: pointer;
   color: #fff;
@@ -325,7 +339,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .feature__box {
-    width: 480px;
+    width: 450px;
   }
 }
 
@@ -352,6 +366,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .feature__text {
+    width: 450px;
     margin-bottom: 30px;
   }
 }
@@ -403,6 +418,12 @@ body {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) {
+  .section-command {
+    width: 480px;
+  }
+}
+
 .section__title {
   font-size: 36px;
   line-height: 1.16;
@@ -411,18 +432,18 @@ body {
   margin-bottom: 50px;
 }
 
-.command {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .command__item {
   background-color: var(--footer-logo-color);
   margin-right: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .command__item {
+    width: 450px;
+  }
 }
 
 .command__item:last-child {
@@ -448,6 +469,12 @@ body {
 .command__box {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .command__box {
+    width: 480px;
+  }
 }
 
 .social {

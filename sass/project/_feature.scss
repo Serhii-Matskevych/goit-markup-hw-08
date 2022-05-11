@@ -19,7 +19,7 @@
   }
   &__box {
     @media screen and (min-width: 480px) {
-      width: 480px;
+      width: 450px;
     }
     display: flex;
     align-items: center;
@@ -45,6 +45,7 @@
   }
   &__text {
     @media screen and (min-width: 480px) {
+      width: 450px;
       margin-bottom: 30px;
     }
     color: var(--title-text-color);
