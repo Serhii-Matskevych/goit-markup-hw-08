@@ -2,6 +2,10 @@
   background-color: var(--primery-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .section__title {
   font-size: 36px;
@@ -53,6 +57,8 @@
   padding-bottom: 30px;
   @media screen and (min-width: 480px) {
     width: 480px;
+    padding-top: 30px;
+    padding-bottom: 38px;
   }
 }
 
