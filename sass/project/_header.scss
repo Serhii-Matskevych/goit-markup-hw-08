@@ -1,18 +1,20 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+  display: none;
   .container {
     height: 80px;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
-  vertical-align: middle;
+  // display: flex;
+  // align-items: center;
+  // vertical-align: middle;
+  padding: 0;
 }
 .logo__studio {
   color: var(--header-logo-color);
@@ -25,6 +27,7 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   @media screen and (min-width: 480px) {
+    width: 480px;
     display: flex;
     justify-content: center;
   }
@@ -34,10 +37,11 @@
 
 /* навигация шапки */
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  // display: flex;
+  // margin-left: 93px;
   &__item {
-    margin-right: 50px;
+    // margin-right: 50px;
+    margin-right: 0;
   }
   &__link:hover {
     color: var(--accent-color);
@@ -50,8 +54,8 @@
   }
   &__link {
     color: var(--primary-text-color);
-    display: block;
-    position: relative;
+    // display: block;
+    // position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -66,8 +70,8 @@
   }
   &__link--active::after {
     content: "";
-    position: absolute;
-    display: block;
+    // position: absolute;
+    // display: block;
     left: 0;
     bottom: -33px;
     width: 100%;
@@ -78,11 +82,13 @@
 }
 
 .auth-nav {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
+  // display: flex;
+  // margin-left: auto;
+  margin-left: 0;
+  // align-items: center;
   &__item + &__item {
-    margin-left: 50px;
+    // margin-left: 50px;
+    margin-left: 0;
   }
   &__link {
     font-family: Roboto, sans-serif;
@@ -109,7 +115,7 @@
   }
   &__icon {
     margin-right: 10px;
-    vertical-align: middle;
+    // vertical-align: middle;
     fill: currentColor;
   }
 }

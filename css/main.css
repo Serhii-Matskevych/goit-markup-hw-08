@@ -1,28 +1,17 @@
 @charset "UTF-8";
 .page-header {
   border-bottom: 1px solid #ececec;
+  display: none;
 }
 
 .page-header .container {
   height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  vertical-align: middle;
+  padding: 0;
 }
 
 .logo__studio {
@@ -40,6 +29,7 @@
 
 @media screen and (min-width: 480px) {
   .logo {
+    width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -51,15 +41,8 @@
 
 /* ////////////// */
 /* навигация шапки */
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
-}
-
 .site-nav__item {
-  margin-right: 50px;
+  margin-right: 0;
 }
 
 .site-nav__link:hover {
@@ -76,8 +59,6 @@
 
 .site-nav__link {
   color: var(--primary-text-color);
-  display: block;
-  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -97,8 +78,6 @@
 
 .site-nav__link--active::after {
   content: "";
-  position: absolute;
-  display: block;
   left: 0;
   bottom: -33px;
   width: 100%;
@@ -108,17 +87,11 @@
 }
 
 .auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: 0;
 }
 
 .auth-nav__item + .auth-nav__item {
-  margin-left: 50px;
+  margin-left: 0;
 }
 
 .auth-nav__link {
@@ -155,7 +128,6 @@
 
 .auth-nav__icon {
   margin-right: 10px;
-  vertical-align: middle;
   fill: currentColor;
 }
 
@@ -381,6 +353,13 @@ body {
 
 .section-development {
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 480px) {
+  .section-development {
+    width: 480px;
+    display: none;
+  }
 }
 
 .photo-list {
@@ -1042,12 +1021,6 @@ body {
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 480px) {
-  .footer-page {
-    width: 480px;
-  }
 }
 
 .footer-page .container {
