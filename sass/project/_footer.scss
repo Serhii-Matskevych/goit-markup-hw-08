@@ -2,10 +2,17 @@
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
   .container {
-    display: flex;
+    // display: flex;
     align-items: baseline;
     padding: 0;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
   }
 }
 .footer-nav__item {
@@ -19,24 +26,28 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: var(--accent-color);
   }
-
-  
 }
 
 .logo-footer {
   color: var(--footer-logo-color);
 }
 .footer-adress {
-  flex-grow: 1;
+  // flex-grow: 1;
+  padding: 0;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 .geolocation {
   font-family: Roboto;
@@ -47,6 +58,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer__logo {
@@ -54,10 +69,16 @@
 }
 .footer-nav__list {
   margin-top: 20px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .footer-link {
-  margin-left: 70px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin: 30px 0;
+  }
 }
 .footer-title {
   font-size: 14px;
@@ -66,11 +87,20 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer-soc__list {
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+  }
 }
+
 .footer-soc__item + .footer-soc__item {
   margin-left: 10px;
 }
@@ -80,9 +110,18 @@
 }
 
 .footer-mail {
-  margin-left: 93px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  // margin-left: 93px;
 }
 .footer__form {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin: 0 15px;
+  }
+
   width: 358px;
   height: 50px;
   background-color: transparent;
@@ -91,6 +130,10 @@
   color: var(--primery-bg-color);
 }
 .footer__button {
+  @media screen and (min-width: 480px) {
+    margin: 20px 140px 0px;
+  }
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
