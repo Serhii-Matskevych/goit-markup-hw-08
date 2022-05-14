@@ -391,7 +391,7 @@ body {
 }
 
 .section__title {
-  font-size: 36px;
+  font-size: 23px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1086,17 +1086,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-
-@media screen and (min-width: 480px) {
-  .geolocation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  text-align: center;
 }
 
 .footer__logo {

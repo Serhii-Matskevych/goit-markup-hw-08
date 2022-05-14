@@ -61,10 +61,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: center;
-  }
+  text-align: center;
 }
 
 .footer__logo {
