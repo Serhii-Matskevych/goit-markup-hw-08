@@ -1,18 +1,11 @@
 .company-list {
   // display: flex;
   // justify-content: center;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
 
   &__item {
     margin-right: 30px;
-
-    @media screen and (min-width: 480px) {
-      margin-bottom: 30px;
-    }
   }
 
   &__item:last-child {
@@ -39,8 +32,5 @@
   &:focus {
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
-  }
-  @media screen and (min-width: 480px) {
-    width: 210px;
   }
 }

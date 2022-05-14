@@ -390,7 +390,7 @@ body {
 
 .section__title {
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
@@ -478,25 +478,16 @@ body {
   fill: #afb1b8;
 }
 
-@media screen and (min-width: 480px) {
-  .company-list {
-    width: 480px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+.company-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .company-list__item {
   margin-right: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .company-list__item {
-    margin-bottom: 30px;
-  }
 }
 
 .company-list__item:last-child {
@@ -533,12 +524,6 @@ body {
 .company-list__link:hover, .company-list__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-}
-
-@media screen and (min-width: 480px) {
-  .company-list__link {
-    width: 210px;
-  }
 }
 
 .backdrop {
