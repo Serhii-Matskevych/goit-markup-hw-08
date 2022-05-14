@@ -173,8 +173,8 @@
 
 img {
   display: block;
-  width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 ul {
@@ -234,12 +234,6 @@ body {
   padding-bottom: 200px;
 }
 
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-  }
-}
-
 .hero-title {
   color: var(--footer-logo-color);
   font-weight: 900;
@@ -248,13 +242,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .hero-title {
-    width: 480px;
-    font-size: 26px;
-  }
 }
 
 .hero__button {
@@ -401,25 +388,12 @@ body {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) {
-  .section-command {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 .section__title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-}
-
-@media screen and (min-width: 480px) {
-  .command {
-    width: 480px;
-  }
 }
 
 .command__item {
@@ -430,15 +404,8 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .command__item {
-    width: 450px;
-    margin-bottom: 30px;
-  }
-}
-
-.command__item:last-child {
-  margin-right: 0;
+.command__item {
+  margin-bottom: 30px;
 }
 
 .command__title {
@@ -460,14 +427,6 @@ body {
 .command__box {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .command__box {
-    width: 480px;
-    padding-top: 30px;
-    padding-bottom: 38px;
-  }
 }
 
 .social {

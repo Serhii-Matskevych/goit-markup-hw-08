@@ -2,10 +2,6 @@
   background-color: var(--primery-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 .section__title {
   font-size: 36px;
@@ -17,9 +13,6 @@
 
 .command {
   // display: flex;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
 
   &__item {
     background-color: var(--footer-logo-color);
@@ -27,15 +20,14 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      margin-bottom: 30px;
-    }
   }
 
-  &__item:last-child {
-    margin-right: 0;
+  &__item {
+    margin-bottom: 30px;
   }
+  // &__item:last-child {
+  //   margin-right: 30px;
+  // }
   &__title {
     font-weight: 500;
     font-size: 16px;
@@ -55,11 +47,6 @@
 .command__box {
   padding-top: 30px;
   padding-bottom: 30px;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    padding-top: 30px;
-    padding-bottom: 38px;
-  }
 }
 
 .social {
