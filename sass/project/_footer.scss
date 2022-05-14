@@ -2,11 +2,15 @@
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1199px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   .container {
-    // display: flex;
-    // align-items: baseline;
-    // padding: 0;
+    display: flex;
+    align-items: baseline;
+    padding: 0;
   }
 }
 
@@ -39,9 +43,9 @@
 }
 .footer-adress {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 51px;
+    margin-left: 215px;
   }
-  // flex-grow: 1;
+  flex-grow: 1;
   padding: 0;
 }
 .geolocation {
@@ -68,6 +72,9 @@
 .footer-link {
   @media screen and (min-width: 768px) {
     margin-left: 165px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
   }
 }
 .footer-title {
@@ -99,8 +106,10 @@
 .footer-mail {
   text-align: center;
   margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
-// margin-left: 93px;
 
 .footer__form {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -139,6 +148,9 @@
 }
 .footer-tablet {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
