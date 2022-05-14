@@ -8,8 +8,8 @@
   &__item {
     @media screen and (min-width: 768px) {
       width: calc(100% / 2 - 30px);
+      margin-right: 30px;
     }
-    margin-right: 30px;
   }
   &__item::before {
     background-color: var(--primery-bg-color);
