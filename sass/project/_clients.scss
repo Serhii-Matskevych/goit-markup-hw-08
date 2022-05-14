@@ -4,17 +4,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: calc(100% / 2 -30px);
 
   &__item {
     margin-right: 30px;
     margin-bottom: 30px;
   }
+  &__item:nth-child(3) {
+    margin-right: 0px;
+  }
+  &__item:last-child {
+    margin-right: 0px;
+  }
   //  &__item:last-child {
   //     margin-right: 0px;
   //   }
-  &__item:last-child {
-    margin-right: 30px;
-  }
+  // &__item:last-child {
+  //   margin-right: 30px;
+  // }
   &__icon {
     fill: currentColor;
   }
