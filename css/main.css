@@ -346,13 +346,7 @@ body {
 
 .section-development {
   padding-bottom: 94px;
-}
-
-@media screen and (min-width: 480px) {
-  .section-development {
-    width: 480px;
-    display: none;
-  }
+  display: none;
 }
 
 .photo-list {
