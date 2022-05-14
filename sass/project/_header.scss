@@ -26,11 +26,9 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+  
 }
 
 /* ////////////// */
@@ -43,6 +41,7 @@
     // margin-right: 50px;
     margin-right: 0;
   }
+
   &__link:hover {
     color: var(--accent-color);
   }
@@ -102,9 +101,6 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 480px) {
-      margin: 0 165px;
-    }
   }
   &__link:hover {
     fill: var(--accent-color);
