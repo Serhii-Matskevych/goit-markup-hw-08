@@ -102,6 +102,7 @@
 }
 
 .footer-mail {
+  text-align: center;
   margin-right: 0;
 
   // margin-left: 93px;
@@ -125,8 +126,9 @@
   color: var(--footer-logo-color);
   border: transparent;
   border-radius: 4px;
-  margin-left: 12px;
+  // margin-left: 12px;
   cursor: pointer;
+  text-align: center;
 }
 .footer-icon {
   margin-left: 10px;

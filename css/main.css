@@ -1133,6 +1133,7 @@ body {
 }
 
 .footer-mail {
+  text-align: center;
   margin-right: 0;
 }
 
@@ -1162,8 +1163,8 @@ body {
   color: var(--footer-logo-color);
   border: transparent;
   border-radius: 4px;
-  margin-left: 12px;
   cursor: pointer;
+  text-align: center;
 }
 
 .footer-icon {
