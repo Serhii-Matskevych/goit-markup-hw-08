@@ -1117,6 +1117,7 @@ body {
 @media screen and (min-width: 768px) {
   .project__card {
     width: 354px;
+    height: 440px;
   }
 }
 
@@ -1173,6 +1174,19 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 68px) {
+  .project-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 35%;
+  }
 }
 
 .project-description__title {

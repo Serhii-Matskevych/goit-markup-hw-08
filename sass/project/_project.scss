@@ -36,7 +36,7 @@
 .project__card {
   @media screen and (min-width: 768px) {
     width: 354px;
-    //  height: 440px;
+    height: 440px;
   }
   display: block;
   transition-property: box-shadow;
@@ -79,6 +79,11 @@
   }
 }
 .project-description {
+  @media screen and (min-width: 68px) {
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+  }
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
