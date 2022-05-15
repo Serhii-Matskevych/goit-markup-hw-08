@@ -1,16 +1,23 @@
 .footer-page {
-  background-color: var(--footer-bg-color);
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
+  background-color: var(--footer-bg-color);
+  // @media screeen and (min-width: 320px) {
+  //   padding-top: 60px;
+  //   padding-bottom: 70px;
+  // }
+
   @media screen and (min-width: 1199px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
   .container {
-    display: flex;
-    align-items: baseline;
-    padding: 0;
+    @media screen and(min-width:1200px) {
+      display: flex;
+      align-items: baseline;
+      padding: 0;
+    }
   }
 }
 
@@ -42,11 +49,17 @@
   color: var(--footer-logo-color);
 }
 .footer-adress {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 215px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 51px;
+    padding-bottom: 0;
   }
   flex-grow: 1;
   padding: 0;
+  padding-bottom: 60px;
 }
 .geolocation {
   font-family: Roboto;
@@ -64,14 +77,23 @@
   color: var(--footer-logo-color);
 }
 .footer-nav__list {
-  margin-top: 20px;
-  margin-bottom: 60px;
+  @media screen and (min-width: 480px) {
+    margin-top: 20px;
+    text-align: center;
+  }
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  // margin-bottom: 60px;
 }
 
 .footer-link {
   @media screen and (min-width: 768px) {
     margin-left: 165px;
+    margin-right: 74px;
     @media screen and (min-width: 1200px) {
       margin-left: 70px;
     }
@@ -126,9 +148,13 @@
   color: var(--primery-bg-color);
 }
 .footer__button {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 70px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 291px;
     margin-right: 277px;
+    margin-bottom: 70px;
   }
   display: inline-flex;
   align-items: center;
@@ -149,6 +175,8 @@
 .footer-tablet {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
