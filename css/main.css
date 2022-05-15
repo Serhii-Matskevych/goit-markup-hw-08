@@ -11,6 +11,13 @@
 }
 
 .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
   padding: 0;
 }
 
@@ -35,7 +42,15 @@
 
 /* ////////////// */
 /* навигация шапки */
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 93px;
+}
+
 .site-nav__item {
+  margin-right: 50px;
   margin-right: 0;
 }
 
@@ -53,6 +68,8 @@
 
 .site-nav__link {
   color: var(--primary-text-color);
+  display: block;
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -72,6 +89,8 @@
 
 .site-nav__link--active::after {
   content: "";
+  position: absolute;
+  display: block;
   left: 0;
   bottom: -33px;
   width: 100%;
@@ -81,10 +100,18 @@
 }
 
 .auth-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
   margin-left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .auth-nav__item + .auth-nav__item {
+  margin-left: 50px;
   margin-left: 0;
 }
 
@@ -116,6 +143,7 @@
 
 .auth-nav__icon {
   margin-right: 10px;
+  vertical-align: middle;
   fill: currentColor;
 }
 

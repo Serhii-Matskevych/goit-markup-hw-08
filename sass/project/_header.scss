@@ -11,9 +11,9 @@
 }
 
 .main-nav {
-  // display: flex;
-  // align-items: center;
-  // vertical-align: middle;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
   padding: 0;
 }
 .logo__studio {
@@ -28,17 +28,16 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
-  
 }
 
 /* ////////////// */
 
 /* навигация шапки */
 .site-nav {
-  // display: flex;
-  // margin-left: 93px;
+  display: flex;
+  margin-left: 93px;
   &__item {
-    // margin-right: 50px;
+    margin-right: 50px;
     margin-right: 0;
   }
 
@@ -53,8 +52,8 @@
   }
   &__link {
     color: var(--primary-text-color);
-    // display: block;
-    // position: relative;
+    display: block;
+    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -69,8 +68,8 @@
   }
   &__link--active::after {
     content: "";
-    // position: absolute;
-    // display: block;
+    position: absolute;
+    display: block;
     left: 0;
     bottom: -33px;
     width: 100%;
@@ -81,12 +80,12 @@
 }
 
 .auth-nav {
-  // display: flex;
-  // margin-left: auto;
+  display: flex;
+  margin-left: auto;
   margin-left: 0;
-  // align-items: center;
+  align-items: center;
   &__item + &__item {
-    // margin-left: 50px;
+    margin-left: 50px;
     margin-left: 0;
   }
   &__link {
@@ -111,7 +110,7 @@
   }
   &__icon {
     margin-right: 10px;
-    // vertical-align: middle;
+    vertical-align: middle;
     fill: currentColor;
   }
 }
