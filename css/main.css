@@ -1098,8 +1098,6 @@ body {
 }
 
 .footer-page {
-  padding-top: 60px;
-  padding-bottom: 70px;
   background-color: var(--footer-bg-color);
 }
 
@@ -1179,6 +1177,7 @@ body {
   .footer-adress {
     margin-left: 51px;
     padding-bottom: 0;
+    padding-top: 0;
   }
 }
 

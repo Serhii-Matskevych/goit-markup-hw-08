@@ -1,11 +1,5 @@
 .footer-page {
-  padding-top: 60px;
-  padding-bottom: 70px;
   background-color: var(--footer-bg-color);
-  // @media screeen and (min-width: 320px) {
-  //   padding-top: 60px;
-  //   padding-bottom: 70px;
-  // }
 
   @media screen and (min-width: 1199px) {
     padding-top: 94px;
@@ -56,6 +50,7 @@
   @media screen and (min-width: 768px) {
     margin-left: 51px;
     padding-bottom: 0;
+    padding-top: 0;
   }
   flex-grow: 1;
   padding: 0;
