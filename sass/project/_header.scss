@@ -1,6 +1,6 @@
 .page-header {
   border-bottom: 1px solid #ececec;
-  display: none;
+
   .container {
     height: 80px;
     // display: flex;
@@ -11,13 +11,23 @@
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   vertical-align: middle;
   padding: 0;
 }
 .logo__studio {
   color: var(--header-logo-color);
+}
+.logo__header {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  // display: flex;
+  // justify-content: center;
 }
 .logo {
   color: var(--accent-color);
@@ -34,12 +44,12 @@
 
 /* навигация шапки */
 .site-nav {
-  display: flex;
-  margin-left: 93px;
-  &__item {
-    margin-right: 50px;
-    margin-right: 0;
-  }
+  // display: flex;
+  // margin-left: 93px;
+  // &__item {
+  //   margin-right: 50px;
+  //   margin-right: 0;
+  // }
 
   &__link:hover {
     color: var(--accent-color);
@@ -80,7 +90,7 @@
 }
 
 .auth-nav {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   margin-left: 0;
   align-items: center;

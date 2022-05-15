@@ -11,9 +11,16 @@
     justify-content: center;
     margin: -15px;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   &__item {
     margin-bottom: 15px;
+    margin-left: 60px;
     @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
       margin: 15px;
     }
     @media screen and (min-width: 768px) {
@@ -31,6 +38,9 @@
     }
     @media screen and (min-width: 768px) {
       width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
     color: #afb1b8;
     display: flex;

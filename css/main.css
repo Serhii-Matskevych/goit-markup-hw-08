@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .page-header {
   border-bottom: 1px solid #ececec;
-  display: none;
 }
 
 .page-header .container {
@@ -11,18 +10,21 @@
 }
 
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   vertical-align: middle;
   padding: 0;
 }
 
 .logo__studio {
   color: var(--header-logo-color);
+}
+
+.logo__header {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo {
@@ -42,18 +44,6 @@
 
 /* ////////////// */
 /* навигация шапки */
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
-}
-
-.site-nav__item {
-  margin-right: 50px;
-  margin-right: 0;
-}
-
 .site-nav__link:hover {
   color: var(--accent-color);
 }
@@ -100,9 +90,6 @@
 }
 
 .auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
   margin-left: 0;
   -webkit-box-align: center;
@@ -501,6 +488,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -631,12 +622,26 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .company-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .company-list__item {
   margin-bottom: 15px;
+  margin-left: 60px;
 }
 
 @media screen and (min-width: 480px) {
   .company-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 15px;
   }
 }
@@ -683,6 +688,12 @@ body {
 @media screen and (min-width: 768px) {
   .company-list .company-list__link {
     width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company-list .company-list__link {
+    width: 170px;
   }
 }
 
@@ -1335,6 +1346,7 @@ body {
   color: var(--footer-logo-color);
   border: transparent;
   border-radius: 4px;
+  margin-left: 12px;
   cursor: pointer;
   text-align: center;
 }
