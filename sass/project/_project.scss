@@ -9,6 +9,11 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &__item {
     @media screen and (min-width: 480px) {
       margin-right: 0;
@@ -36,7 +41,9 @@
 .project__card {
   @media screen and (min-width: 768px) {
     width: 354px;
-    height: 440px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   display: block;
   transition-property: box-shadow;
@@ -79,11 +86,7 @@
   }
 }
 .project-description {
-  @media screen and (min-width: 68px) {
-    display: flex;
-    flex-direction: column;
-    height: 35%;
-  }
+  flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
