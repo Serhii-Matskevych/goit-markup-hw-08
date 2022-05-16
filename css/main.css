@@ -1230,7 +1230,6 @@ body {
 @media screen and (min-width: 1199px) {
   .footer-page {
     padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -1357,7 +1356,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-link {
-    margin-left: 165px;
+    margin-left: 70px;
     margin-right: 0;
   }
 }
