@@ -1239,7 +1239,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
-    width: 1600px;
   }
 }
 
@@ -1306,9 +1305,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-adress {
-    margin-left: 215px;
-    padding-bottom: 0;
-    padding-top: 0;
+    margin-left: 0px;
   }
 }
 
