@@ -47,10 +47,10 @@
 .site-nav {
   // display: flex;
   // margin-left: 93px;
-  // &__item {
-  //   margin-right: 50px;
-  //   margin-right: 0;
-  // }
+  &__item {
+    margin-right: 50px;
+    margin-right: 0;
+  }
 
   &__link:hover {
     color: var(--accent-color);
@@ -77,24 +77,24 @@
   &__link--active {
     color: var(--accent-color);
   }
-  &__link--active::after {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: -33px;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-  }
+  // &__link--active::after {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   left: 0;
+  //   bottom: -33px;
+  //   width: 100%;
+  //   height: 4px;
+  //   background-color: var(--accent-color);
+  //   border-radius: 2px;
+  // }
 }
 
 .auth-nav {
   // display: flex;
   margin-left: auto;
   margin-left: 0;
-  align-items: center;
+  // align-items: center;
   &__item + &__item {
     margin-left: 50px;
     margin-left: 0;
