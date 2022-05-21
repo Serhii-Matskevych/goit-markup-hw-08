@@ -1,25 +1,23 @@
 .hero {
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+  width: 480px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../webstudio-version2.1copy/Header-img-mob.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../webstudio-version2.1copy/Header-img-mob.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../../webstudio-version2.1copy/Header-img-2x.jpg);
-    }
+      url(../../webstudio-version2.1copy/Header-img-2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
