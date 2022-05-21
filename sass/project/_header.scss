@@ -49,15 +49,22 @@
   justify-content: center;
 }
 .logo {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+  }
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  // }
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
+  // display: flex;
+  // justify-content: center;
+  // margin-top: 60px;
 }
 
 /* ////////////// */
