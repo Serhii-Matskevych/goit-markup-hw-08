@@ -379,6 +379,11 @@
   }
 }
 
+.menu-open-btn:hover,
+:focus {
+  fill: #2196f3;
+}
+
 .menu-close-btn {
   background-color: transparent;
   border: none;
