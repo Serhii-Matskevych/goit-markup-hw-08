@@ -3,10 +3,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
   .container {
+    display: flex;
+    flex-direction: column;
     padding-top: 0;
     padding-bottom: 0;
     @media screen and(min-width:1200px) {
-      display: flex;
+      flex-direction: row;
       align-items: baseline;
       padding: 0;
     }
@@ -51,7 +53,7 @@
   @media screen and (min-width: 1200px) {
     flex-grow: 1;
     margin-left: 0;
-    margin-right: 70px;
+    align-items: flex-start;
   }
 }
 .geolocation {
@@ -76,6 +78,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
   }
 }
 
