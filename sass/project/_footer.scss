@@ -7,6 +7,7 @@
     flex-direction: column;
     padding-top: 0;
     padding-bottom: 0;
+    justify-content: space-between;
     @media screen and(min-width:1200px) {
       flex-direction: row;
       align-items: baseline;
@@ -86,7 +87,7 @@
 
 .footer-link {
   @media screen and (min-width: 1200px) {
-    // margin-left: 70px;
+    margin-left: 70px;
     margin-right: 0;
     // align-items: baseline;
   }
@@ -133,14 +134,16 @@
 }
 
 .footer__form {
-  width: 250px;
+  width: 95vw;
   @media screen and (min-width: 768px) {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
   }
-
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
   height: 50px;
   margin-bottom: 20px;
   background-color: transparent;

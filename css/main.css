@@ -944,14 +944,11 @@ body {
 }
 
 .company-list__item {
-  margin-bottom: 15px;
-  margin-left: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 210px;
 }
 
 @media screen and (min-width: 768px) {
@@ -975,7 +972,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -1540,6 +1537,9 @@ body {
           flex-direction: column;
   padding-top: 0;
   padding-bottom: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1671,6 +1671,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-link {
+    margin-left: 70px;
     margin-right: 0;
   }
 }
@@ -1732,7 +1733,7 @@ body {
 }
 
 .footer__form {
-  width: 250px;
+  width: 95vw;
   height: 50px;
   margin-bottom: 20px;
   background-color: transparent;
@@ -1749,6 +1750,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    width: 358px;
   }
 }
 
