@@ -1133,13 +1133,15 @@ body {
 .button-list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 40px;
+}
+
+.button-list__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1166,6 +1168,7 @@ body {
 
 .button-list__item:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .button-list__secondary {
