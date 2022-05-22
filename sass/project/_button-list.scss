@@ -6,6 +6,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
   &__item {
     @media screen and (min-width: 768px) {

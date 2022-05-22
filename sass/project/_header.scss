@@ -26,7 +26,6 @@
   vertical-align: middle;
   padding: 0;
   @media screen and(min-width:1200px) {
-    margin-right: 305px;
   }
 }
 .logo__studio {
@@ -39,10 +38,15 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
   }
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: none;
   display: flex;
@@ -54,10 +58,16 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+  }
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: none;
   // display: flex;
@@ -119,7 +129,12 @@
 
 .auth-nav {
   &__item {
-    margin-bottom: 10px;
+    @media screen and(min-width:768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and(min-width:1200px) {
+      margin-bottom: 0;
+    }
   }
   &__item:last-child {
     margin-bottom: 0;
@@ -131,14 +146,20 @@
     align-items: stretch;
     margin-left: 84px;
   }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+  }
 
-  // display: flex;
-  // margin-left: auto;
-  // margin-left: 0;
-  // align-items: center;
   &__item + &__item {
-    margin-left: 50px;
-    margin-left: 0;
+    @media screen and(min-width:768px) {
+      margin-left: 0;
+    }
+    @media screen and(min-width:1200px) {
+      margin-left: 30px;
+    }
   }
   &__link {
     @media screen and(min-width:768px) {

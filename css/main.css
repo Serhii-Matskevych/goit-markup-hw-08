@@ -45,12 +45,6 @@
   padding: 0;
 }
 
-@media screen and (min-width: 1200px) {
-  .main-nav {
-    margin-right: 305px;
-  }
-}
-
 .logo__studio {
   color: var(--header-logo-color);
 }
@@ -58,8 +52,8 @@
 .logo__header {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: none;
   display: -webkit-box;
@@ -79,11 +73,19 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo__header {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -93,6 +95,15 @@
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
   }
 }
 
@@ -164,8 +175,16 @@
   display: none;
 }
 
-.auth-nav__item {
-  margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+  .auth-nav__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__item {
+    margin-bottom: 0;
+  }
 }
 
 .auth-nav__item:last-child {
@@ -188,9 +207,32 @@
   }
 }
 
-.auth-nav__item + .auth-nav__item {
-  margin-left: 50px;
-  margin-left: 0;
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav__item + .auth-nav__item {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__item + .auth-nav__item {
+    margin-left: 30px;
+  }
 }
 
 .auth-nav__link {
@@ -1267,6 +1309,12 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
   }
 }
 
