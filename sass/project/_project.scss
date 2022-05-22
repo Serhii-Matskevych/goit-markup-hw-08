@@ -1,4 +1,7 @@
 .project {
+  &__item {
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -14,8 +17,6 @@
   &__item:last-child {
     margin-bottom: 0;
   }
-
-  margin-bottom: 30px;
 }
 
 .project__card {

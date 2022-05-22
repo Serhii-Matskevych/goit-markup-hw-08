@@ -127,6 +127,7 @@
 }
 
 .footer__form {
+  width: 250px;
   @media screen and (min-width: 768px) {
     width: 450px;
     margin-left: auto;
@@ -154,7 +155,7 @@
   color: var(--footer-logo-color);
   border: transparent;
   border-radius: 4px;
-  margin-left: 12px;
+
   cursor: pointer;
   text-align: center;
 }
@@ -163,8 +164,8 @@
 }
 .footer-input {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   @media screen and(min-width:768px) {
     display: flex;
     flex-direction: column;
