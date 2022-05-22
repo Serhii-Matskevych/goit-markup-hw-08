@@ -103,7 +103,6 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
   }
 }
 
@@ -1625,6 +1624,7 @@ body {
 
 .footer-nav__list {
   text-align: center;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1687,10 +1687,6 @@ body {
   fill: #ffffff;
 }
 
-.footer-mail {
-  margin-top: 60px;
-}
-
 @media screen and (min-width: 768px) {
   .footer-mail {
     margin-top: 60px;
@@ -1700,6 +1696,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-mail {
     margin-left: 93px;
+    margin-top: 0;
   }
 }
 
@@ -1804,6 +1801,14 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-tablet {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 /*# sourceMappingURL=main.css.map */

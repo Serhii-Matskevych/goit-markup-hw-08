@@ -71,19 +71,19 @@
 }
 .footer-nav__list {
   text-align: center;
+  margin-top: 20px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  // margin-bottom: 60px;
 }
 
 .footer-link {
   @media screen and (min-width: 1200px) {
     // margin-left: 70px;
     margin-right: 0;
+    // align-items: baseline;
   }
 }
 .footer-title {
@@ -117,12 +117,13 @@
 }
 
 .footer-mail {
-  margin-top: 60px;
+  // margin-top: 60px;
   @media screen and (min-width: 768px) {
     margin-top: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
+    margin-top: 0;
   }
 }
 
@@ -182,5 +183,8 @@
     display: flex;
 
     justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
   }
 }
