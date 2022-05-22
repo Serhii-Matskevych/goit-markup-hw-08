@@ -50,7 +50,9 @@
 }
 .logo {
   @media screen and (min-width: 768px) {
-    display: flex;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
   }
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -116,6 +118,12 @@
 }
 
 .auth-nav {
+  &__item {
+    margin-bottom: 10px;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
   display: none;
   @media screen and(min-width:768px) {
     display: flex;
@@ -124,9 +132,6 @@
     margin-left: 84px;
   }
 
-  &__item {
-    margin-right: 30px;
-  }
   // display: flex;
   // margin-left: auto;
   // margin-left: 0;
@@ -174,7 +179,7 @@
   }
 }
 .auth-nav__icon {
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767px) {
     display: none;
   }
 }
