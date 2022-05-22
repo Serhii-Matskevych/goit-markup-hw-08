@@ -169,6 +169,13 @@
   letter-spacing: 0.03em;
   &::before {
     content: "";
+    @media screen and(min-width:320px) {
+      width: 16px;
+      height: 15px;
+      border: 2px solid var(--header-logo-color);
+      border-radius: 2px;
+      margin-right: 8px;
+    }
     width: 16px;
     height: 15px;
     border: 2px solid var(--header-logo-color);
