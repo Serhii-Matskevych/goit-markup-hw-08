@@ -10,6 +10,10 @@
   }
 
   &__item {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 30px;
     @media screen and (min-width: 768px) {
       width: calc(100% / 2 - 30px);
 
@@ -56,6 +60,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__text {
     color: var(--title-text-color);
