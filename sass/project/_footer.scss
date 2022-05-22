@@ -1,7 +1,10 @@
 .footer-page {
   background-color: var(--footer-bg-color);
-
+  padding-top: 60px;
+  padding-bottom: 60px;
   .container {
+    padding-top: 0;
+    padding-bottom: 0;
     @media screen and(min-width:1200px) {
       display: flex;
       align-items: baseline;
@@ -38,10 +41,7 @@
   color: var(--footer-logo-color);
 }
 .footer-adress {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-right: 165px;
   }
@@ -67,10 +67,6 @@
   color: var(--footer-logo-color);
 }
 .footer-nav__list {
-  @media screen and (min-width: 480px) {
-    margin-top: 20px;
-    text-align: center;
-  }
   text-align: center;
   @media screen and (min-width: 768px) {
     margin-top: 20px;
@@ -85,19 +81,13 @@
 
 .footer-link {
   margin-top: 60px;
-  @media screen and (min-width: 480px) {
-    margin-top: 0;
-  }
+
   @media screen and (min-width: 1200px) {
     // margin-left: 70px;
     margin-right: 0;
   }
 }
 .footer-title {
-  @media screen and (min-width: 480px) {
-    text-align: center;
-  }
-
   @media screen and (min-width: 1200px) {
     text-align: start;
   }
@@ -113,7 +103,7 @@
 .footer-soc__list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -134,16 +124,13 @@
 }
 
 .footer__form {
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
   @media screen and (min-width: 768px) {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
   }
-  width: 358px;
+
   height: 50px;
   margin-bottom: 20px;
   background-color: transparent;
@@ -152,12 +139,6 @@
   color: var(--primery-bg-color);
 }
 .footer__button {
-  @media screen and (min-width: 480px) {
-    margin-bottom: 60px;
-    margin-left: 140px;
-    margin-right: 140px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin: 0 0 0 12px;
   }
@@ -178,11 +159,6 @@
   margin-left: 10px;
 }
 .footer-input {
-  @media screen and(min-width:480px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   @media screen and(min-width:768px) {
     display: flex;
     flex-direction: column;
@@ -195,6 +171,7 @@
   }
 }
 .footer-tablet {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
 

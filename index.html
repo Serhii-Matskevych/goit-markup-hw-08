@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -200,9 +200,21 @@
                 <h2 class="section__title ">Наша команда</h2>
                 <ul class="command">
                     <li class="command__item">
+                        <picture>
+                            <source    srcset="./command-picture/imgfirst-desk.jpg 1x,
+                            ./command-picture/imgfirst-desk-2x.jpg 2x"
+                             media="min-width:1200px" >
+                           
+
+                            <source srcset="./command-picture/imgfirst-tab.jpg 1x,
+                                            ./command-picture/imgfirst-tab-2x.jpg 2x"
+                                            media="min-width:768px" >
+
+                             <source srcset="./command-picture/imgfirst-mob.jpg 1x,
+                                             ./command-picture/imgfirst-mob-2x.jpg 2x"
+                                             media="min-width:320px" >
+                        </picture>
                         <img width="270"
-                       srcset="./webstudio-version2.1copy/img(3).jpg 1x,
-                            ./webstudio-version2.1copy/img(3)-2x.jpg 2x" 
                         src="./webstudio-version2.1copy/img(3).jpg" alt="фото" >
                         <div class="command__box">
                             <h3 class="command__title">Игорь Демьяненко</h3>
@@ -242,9 +254,21 @@
                     </li>
 
                     <li class="command__item">
+                        <picture>
+                            <source srcset="./command-picture/img2-desk.jpg 1x,
+                                                    ./command-picture/img2-desk-2x.jpg 2x" 
+                                                    media="min-width:1200px">
+                        
+                        
+                            <source srcset="./command-picture/img2-tab.jpg 1x,
+                                            ./command-picture/img2-tab-2x.jpg 2x" 
+                                            media="min-width:768px">
+                        
+                            <source srcset="./command-picture/img2-mob.jpg 1x,
+                                            ./command-picture/img2-mob-2x.jpg 2x"
+                                             media="min-width:320px">
+                        </picture>
                         <img 
-                        srcset="./webstudio-version2.1copy/img.jpg 1x,
-                                 ./webstudio-version2.1copy/img-2x.jpg 2x"
                          src="./webstudio-version2.1copy/img.jpg" alt="фото" width="270">
                         <div class="command__box">
                             <h3 class="command__title">Ольга Репина</h3>
@@ -283,9 +307,21 @@
                         </div>
                     </li>
                     <li class="command__item">
+                        <picture>
+                            <source srcset="./command-picture/img3-desk.jpg 1x,
+                                             ./command-picture/img3-desk-2x.jpg 2x" 
+                                            media="min-width:1200px">
+                        
+                        
+                            <source srcset="./command-picture/img3-tab.jpg 1x,
+                                            ./command-picture/img3-tab-2x.jpg 2x"
+                                             media="min-width:768px">
+                        
+                            <source srcset="./command-picture/img3-mob.jpg 1x,
+                                            ./command-picture/img3-mob-2x.jpg 2x"
+                                             media="min-width:320px">
+                        </picture>
                         <img width="270"
-                        srcset="./webstudio-version2.1copy/img(2).jpg 1x,
-                                 ./webstudio-version2.1copy/img(2)-2x.jpg 2x" 
                                  src="./webstudio-version2.1copy/img(2).jpg" alt="фото">
                         <div class="command__box">
                             <h3 class="command__title">Николай Тарасов</h3>
@@ -324,9 +360,21 @@
                         </div>
                     </li>
                     <li class="command__item">
-                        <img width="270"
-                        srcset="./webstudio-version2.1copy/img(1).jpg 1x,
-                                 ./webstudio-version2.1copy/img(1)-2x.jpg 2x" 
+                        <picture>
+                            <source srcset="./command-picture/img4-desk.jpg 1x,
+                                            ./command-picture/img4-desk-2x.jpg 2x"
+                                             media="min-width:1200px">
+                        
+                        
+                            <source srcset="./command-picture/img4-tab.jpg 1x,
+                                            ./command-picture/img4-tab-2x.jpg 2x"
+                                             media="min-width:768px">
+                        
+                            <source srcset="./command-picture/img4-mob.jpg 1x,
+                                            ./command-picture/img4-mob-2x.jpg 2x"
+                                             media="min-width:320px">
+                        </picture>
+                        <img width="270" 
                         src="./webstudio-version2.1copy/img(1).jpg" alt="фото">
                         <div class="command__box">
                             <h3 class="command__title">Михаил Ермаков</h3>
@@ -423,10 +471,8 @@
     <!-- подвал сайта -->
 
      <footer class="footer-page">
-<div class="container">
      <div class="container footer-page">
         <div class="footer-tablet">
-
             <div class="footer-adress">
                 <!-- логотип -->
                 
@@ -444,7 +490,7 @@
                         <li class="footer-nav__item "><a href="mailto:info@devstudio.com" class="auth-nav__link">info@devstudio.com</a>
                         </li>
                         <li class="footer-nav__item "><a href="tel:+380961111111" class="auth-nav__link">+38 096 111 11 11</a></li>
-                      
+                    </ul>
                 </address>  
         </div>
             <div class="footer-link">
@@ -496,13 +542,12 @@
             </form>
         
  </div>
-       
-   
+     
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="button__modal" data-modal-close>
-                <svg class="svg__close"width="30px" height="30px">
+                <svg class="svg__close" width="30px" height="30px">
                     <use href="./symbol-defs.svg#icon-Vector-1"></use>
                 </svg>
             </button>

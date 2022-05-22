@@ -1,10 +1,9 @@
 .company-list {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: -15px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -18,11 +17,11 @@
   &__item {
     margin-bottom: 15px;
     margin-left: 60px;
-    @media screen and (min-width: 480px) {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 15px;
-    }
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+
     @media screen and (min-width: 768px) {
       margin: 15px;
     }
@@ -33,9 +32,6 @@
   }
 
   .company-list__link {
-    @media screen and (min-width: 480px) {
-      width: 210px;
-    }
     @media screen and (min-width: 768px) {
       width: 226px;
     }
