@@ -167,6 +167,9 @@
   font-size: 12px;
   line-height: 1.16px;
   letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &::before {
     content: "";
     @media screen and(min-width:320px) {
@@ -175,6 +178,7 @@
       border: 2px solid var(--header-logo-color);
       border-radius: 2px;
       margin-right: 8px;
+      display: block;
     }
     width: 16px;
     height: 15px;
